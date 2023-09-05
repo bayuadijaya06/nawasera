@@ -54,7 +54,7 @@ html {
 }
 .hero {
   overflow-x: hidden;
-
+  overflow-y: hidden;
   display: flex;
   width: 100vw;
   height: 80vh;
