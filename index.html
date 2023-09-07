@@ -29,6 +29,25 @@
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
     <title>SolusiinAja! | Home</title>
+    <script>
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      window.addEventListener("scroll", reveal);
+
+      // To check the scroll position on page load
+      reveal();
+    </script>
   </head>
   <body>
     <!-- NAV -->
@@ -216,7 +235,7 @@
         <div class="col-12" id="service-container">
           <div class="row">
             <!-- Service Items -->
-            <div class="col-xl-3 mb-2">
+            <div class="col-xl-3 mb-2 reveal fade-left">
               <div class="card p-0 d-flex flex-column h-100" id="service-1">
                 <div class="card-body">
                   <p class="service-icon">🌐</p>
@@ -241,7 +260,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 mb-2">
+            <div class="col-xl-3 mb-2 reveal fade-left">
               <div class="card p-0 d-flex flex-column h-100" id="service-2">
                 <div class="card-body">
                   <p class="service-icon">📱</p>
@@ -264,7 +283,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 mb-2">
+            <div class="col-xl-3 mb-2 reveal fade-right">
               <div class="card p-0 d-flex flex-column h-100" id="service-3">
                 <div class="card-body">
                   <p class="service-icon">💻</p>
@@ -289,7 +308,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 mb-2">
+            <div class="col-xl-3 mb-2 reveal fade-right">
               <div class="card p-0 d-flex flex-column h-100" id="service-4">
                 <div class="card-body">
                   <p class="service-icon">🎨</p>
@@ -332,7 +351,7 @@
             Here are some of our works that may suit for your project
           </p>
         </div>
-        <div class="col-12" id="project-container">
+        <div class="col-12 reveal fade-bottom" id="project-container">
           <div class="row">
             <!-- Project Items -->
             <div class="col-xl-4 mb-3">
@@ -382,7 +401,10 @@
       </div>
       <!-- CONTACT-US -->
       <div class="row" id="contact">
-        <div class="col-12 text-center" style="padding-bottom: 3.125rem">
+        <div
+          class="col-12 text-center reveal fade-bottom"
+          style="padding-bottom: 3.125rem"
+        >
           <h2 style="padding-bottom: 1rem">Contact Us</h2>
           <p
             style="
@@ -398,7 +420,7 @@
           </p>
         </div>
         <div class="row">
-          <div class="col-xl-6 text-center">
+          <div class="col-xl-6 text-center reveal fade-left">
             <img
               id="img-contact"
               class="img-fluid"
@@ -406,7 +428,7 @@
               alt="Contact Us"
             />
           </div>
-          <div class="col-xl-6">
+          <div class="col-xl-6 reveal fade-right">
             <div class="row">
               <!-- Name -->
               <div class="col-xl-6 mb-3">
