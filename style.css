@@ -306,6 +306,16 @@ footer a:hover {
   .navbar {
     width: 100%;
     position: static;
+    padding: 1rem 1rem;
+  }
+  footer {
+    padding: 5rem 2rem 2rem 2rem;
+  }
+  #contact {
+    padding: 2rem 2rem;
+  }
+  #services {
+    padding: 2rem 2rem;
   }
 }
 @media screen and (max-width: 420px) {
