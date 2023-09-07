@@ -15,3 +15,21 @@ window.addEventListener("scroll", reveal);
 
 // To check the scroll position on page load
 reveal();
+
+function send() {
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let body = document.getElementById("message").value;
+  if (name.trim() !== "" && body.trim() !== "") {
+    document.getElementById("danger").style.display = "none";
+
+    window.location.href =
+      "mailto:hello@solusiinaja.id?subject=" +
+      name +
+      " - Solusiinaja Inquiry" +
+      "&body=" +
+      body;
+  } else {
+    document.getElementById("danger").style.display = "block";
+  }
+}
