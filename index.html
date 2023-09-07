@@ -23,11 +23,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>SOLUSIINAJA!</title>
+    <title>Document</title>
   </head>
   <body>
     <!-- NAV -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div id="logo-container">
         <button
           class="navbar-toggler"
@@ -45,7 +45,9 @@
         </a>
       </div>
       <div class="text-center justify-content-center d-lg-none">
-        <button class="btn btn-contact" type="button">Contact Us</button>
+        <a href="#contact">
+          <button class="btn btn-contact" type="button">Contact Us</button></a
+        >
       </div>
       <div
         class="collapse navbar-collapse justify-content-end mt-1"
@@ -56,10 +58,7 @@
           style="--bs-scroll-height: 100%"
         >
           <li class="nav-item">
-            <a
-              class="nav-link active"
-              aria-current="page"
-              href="#about-container"
+            <a class="nav-link active" aria-current="page" href="#about"
               >About Us</a
             >
           </li>
@@ -87,194 +86,486 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Projects</a>
+            <a class="nav-link active" aria-current="page" href="#projects"
+              >Projects</a
+            >
           </li>
         </ul>
       </div>
       <div class="text-center justify-content-center d-none d-lg-block">
-        <button class="btn btn-contact" type="button">Contact Us</button>
+        <a href="#contact">
+          <button class="btn btn-contact" type="button">Contact Us</button></a
+        >
       </div>
     </nav>
-    <!-- HERO -->
-    <div class="hero mt-3">
-      <!-- HI -->
-      <div>
-        <p>Hi! 👋 Welcome to</p>
-      </div>
-      <!-- LOGO -->
-      <div>
-        <img src="assets/logo-dark-vector.svg" alt="" width="272px" />
-        <div class="mt-3">
-          <span>by Nawasera Solution</span>
+    <!-- BODY -->
+    <div id="main-container">
+      <!-- HERO -->
+      <div class="row gy-0" id="hero">
+        <div>
+          <div class="col-12 p-3">
+            <p>Hi! 👋 Welcome to</p>
+          </div>
+          <div class="col-12 p-3">
+            <img src="assets/logo-dark-vector.svg" alt="" />
+            <p
+              style="color: rgba(30, 30, 30, 0.5); font-size: 0.875rem"
+              class="p-3"
+            >
+              by Nawasera Solution
+            </p>
+          </div>
+          <div class="col-12 p-3">
+            <div id="terminal">
+              <span
+                ><b style="color: #fff">@nawasera ~%</b>
+                <span style="color: #5cfbd4">Your Partner in</span>
+                <span style="color: #b490ff">Software Development</span>
+                <span style="color: #ffb287">Excellence_</span>
+              </span>
+            </div>
+          </div>
+          <div class="col-12 p-3" id="slogan">
+            <h1 style="font-weight: 600; color: #1e1e1e">
+              Transforming Ideas💡 into <br />
+              Seamless Digital Experiences✨
+            </h1>
+          </div>
+          <div class="col-12 p-3">
+            <p>Ready to embark your digital journey?</p>
+          </div>
+          <div class="col-12 p-3">
+            <button class="btn btn-nwsr">Contact Us Now!</button>
+          </div>
+          <div id="container-ava-1" class="d-lg-block d-none">
+            <img id="ava-1" src="assets/man-1.png" alt="" />
+          </div>
+          <div id="container-ava-2" class="d-xl-block d-none">
+            <img id="ava-2" src="assets/man-2.png" alt="" />
+          </div>
         </div>
       </div>
-      <!-- TERMINAL -->
-      <div class="terminal">
-        <span
-          ><b>@nawasera ~%</b>
-          <span style="color: #5cfbd4">Your Partner in</span>
-          <span style="color: #b490ff">Software Development</span>
-          <span style="color: #ffb287">Excellence_</span>
-        </span>
-      </div>
-      <!-- BIG A## SLOGAN -->
-      <div class="slogan">
-        <h1>
-          Transforming Ideas💡 into <br />
-          Seamless Digital Experiences✨
-        </h1>
-      </div>
-      <!-- BEFORE CTA -->
-      <div class="beforeCta">
-        <p>Ready to embark your digital journey?</p>
-      </div>
-      <div class="containerCta">
-        <button class="btn-nwsr" id="ctaBtn">Contact Us Now!</button>
-      </div>
-      <div id="ava-container" class="d-none d-lg-block">
-        <img id="ava1" src="assets/man-1.png" alt="" />
-      </div>
-      <div id="ava-container-2" class="d-none d-xl-block">
-        <img id="ava2" src="assets/man-2.png" alt="" />
-      </div>
-      <div id="ava-container-3" class="d-xl-none">
-        <img id="ava2" src="assets/man-2.png" alt="" />
-      </div>
-    </div>
-    <!-- ABOUT -->
-    <div id="about-service-container">
-      <div id="about-container">
-        <div id="about">
-          <div id="about-1">
-            <p>About Us</p>
+      <!-- ABOUT -->
+      <div class="row" id="about">
+        <div class="col-12">
+          <div class="row" id="about-container">
+            <div class="col-xl-3 col-sm-12 text-center">
+              <h1>About Us</h1>
+            </div>
+            <div class="col-1 d-none d-xl-block">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="51"
+                height="138"
+                viewBox="0 0 51 138"
+                fill="none"
+              >
+                <path
+                  d="M50.2509 1.34213L0.999989 136.658"
+                  stroke="#10A37F"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <div class="col-12 d-sm-block d-xl-none text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="151"
+                height="2"
+                viewBox="0 0 151 2"
+                fill="none"
+              >
+                <path
+                  d="M0.5 1L150.5 1"
+                  stroke="#10A37F"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <div class="col-xl-8 col-sm-12">
+              <span
+                ><b>Solusiinaja</b> is a software development service company
+                based in Bandung, West Java, Indonesia. Driven by a passion for
+                innovation and a commitment to delivering exceptional IT
+                software services. With a team of dedicated professionals, we
+                embark on a journey to transform your digital aspirations into
+                reality.</span
+              >
+            </div>
           </div>
-          <div class="d-lg-block d-none">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="51"
-              height="138"
-              viewBox="0 0 51 138"
-              fill="none"
+        </div>
+      </div>
+      <!-- SERVICES -->
+      <div class="row" id="services">
+        <div class="col-12 text-center" style="padding-bottom: 3.125rem">
+          <h2>Our Services</h2>
+        </div>
+        <div class="col-12" id="service-container">
+          <div class="row">
+            <!-- Service Items -->
+            <div class="col-xl-3 mb-2">
+              <div class="card p-0 d-flex flex-column h-100" id="service-1">
+                <div class="card-body">
+                  <p class="service-icon">🌐</p>
+                  <p class="service-title">Website Application</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="27"
+                    height="2"
+                    viewBox="0 0 27 2"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 1H26"
+                      stroke="#10A37F"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <p class="service-desc">
+                    Web Development, API to server management
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 mb-2">
+              <div class="card p-0 d-flex flex-column h-100" id="service-2">
+                <div class="card-body">
+                  <p class="service-icon">📱</p>
+                  <p class="service-title">Mobile Application</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="27"
+                    height="2"
+                    viewBox="0 0 27 2"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 1H26"
+                      stroke="#B491FF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <p class="service-desc">Building custom iOS & Android apps</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 mb-2">
+              <div class="card p-0 d-flex flex-column h-100" id="service-3">
+                <div class="card-body">
+                  <p class="service-icon">💻</p>
+                  <p class="service-title">Desktop Application</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="27"
+                    height="2"
+                    viewBox="0 0 27 2"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 1H26"
+                      stroke="#FFB287"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <p class="service-desc">
+                    Development for Windows, macOS & Linux operating system
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 mb-2">
+              <div class="card p-0 d-flex flex-column h-100" id="service-4">
+                <div class="card-body">
+                  <p class="service-icon">🎨</p>
+                  <p class="service-title">Product Design</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="27"
+                    height="2"
+                    viewBox="0 0 27 2"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 1H26"
+                      stroke="#3AA4F1"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <p class="service-desc">Turn ideas into great product</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- PROJECTS -->
+      <div class="row" id="projects">
+        <div class="col-12 text-center" style="padding-bottom: 3.125rem">
+          <h2 style="padding-bottom: 1rem">Our Projects</h2>
+          <p
+            style="
+              color: rgba(30, 30, 30, 0.5);
+              font-family: Poppins;
+              font-size: 1rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            "
+          >
+            Here are some of our works that may suit for your project
+          </p>
+        </div>
+        <div class="col-12" id="project-container">
+          <div class="row">
+            <!-- Project Items -->
+            <div class="col-xl-4 mb-3">
+              <div class="card p-0 d-flex flex-column h-100" id="project-1">
+                <div class="card-body">
+                  <div class="project">
+                    <p class="project-title">Project Name</p>
+                    <div class="tags-container">
+                      <div class="tag-ui"><span>UI/UX</span></div>
+                      <div class="tag-andro"><span>Android</span></div>
+                    </div>
+                    <p class="project-desc">Short description of the project</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 mb-3">
+              <div class="card p-0 d-flex flex-column h-100" id="project-2">
+                <div class="card-body">
+                  <div class="project">
+                    <p class="project-title">Project Name</p>
+                    <div class="tags-container">
+                      <div class="tag-ui"><span>UI/UX</span></div>
+                      <div class="tag-web"><span>Web</span></div>
+                    </div>
+                    <p class="project-desc">Short description of the project</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 mb-3">
+              <div class="card p-0 d-flex flex-column h-100" id="project-3">
+                <div class="card-body">
+                  <div class="project">
+                    <p class="project-title">Project Name</p>
+                    <div class="tags-container">
+                      <div class="tag-ui"><span>UI/UX</span></div>
+                      <div class="tag-ios"><span>IOs</span></div>
+                    </div>
+                    <p class="project-desc">Short description of the project</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CONTACT-US -->
+      <div class="row" id="contact">
+        <div class="col-12 text-center" style="padding-bottom: 3.125rem">
+          <h2 style="padding-bottom: 1rem">Contact Us</h2>
+          <p
+            style="
+              color: rgba(30, 30, 30, 0.5);
+              font-family: Poppins;
+              font-size: 1rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            "
+          >
+            Do you have any briliant idea? Let’s make it happen with us!
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-xl-6 text-center">
+            <img
+              id="img-contact"
+              class="img-fluid"
+              src="assets/contact.png"
+              alt="Contact Us"
+            />
+          </div>
+          <div class="col-xl-6">
+            <div class="row">
+              <!-- Name -->
+              <div class="col-xl-6 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Name"
+                  id="name"
+                />
+              </div>
+              <div class="col-xl-6 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Email"
+                  id="email"
+                />
+              </div>
+              <div class="col-12">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="message"
+                  placeholder="Message"
+                  rows="7"
+                ></textarea>
+              </div>
+              <div class="col-12 mt-3">
+                <button class="btn-nwsr w-100">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <footer class="text-light">
+        <div class="row align-items-center">
+          <!-- LOGO FOOTER -->
+          <div class="col-xl-4 text-xl-center text-sm-center">
+            <div>
+              <img src="assets/logo-light.png" alt="" id="logo-footer" />
+              <p
+                style="
+                  color: rgba(255, 255, 255, 0.5);
+                  font-family: Poppins;
+                  font-size: 0.875rem;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                "
+              >
+                by Nawasera Solution
+              </p>
+            </div>
+          </div>
+          <!-- REACH US -->
+          <div class="col-xl-4 text-xl-start text-sm-start">
+            <div>
+              <h5
+                style="
+                  color: #fff;
+                  font-family: Poppins;
+                  font-size: 1.5rem;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: normal;
+                "
+              >
+                Reach Us
+              </h5>
+              <div class="py-2">
+                <b>Email </b>
+                <span>email@solusiinaja.id</span>
+              </div>
+              <div class="py-2">
+                <b>Phone </b><span> +62 812 3456 7890</span>
+              </div>
+              <div class="py-2">
+                <b>Address</b>
+                <br />
+                <span
+                  >Jl. Bojong Santos, no. 69, Dayeuhkolot, Bandung, West java,
+                  Indonesia, 40000
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- SOCIAL MEDIA -->
+          <div class="col-xl-4 text-xl-end text-sm-center">
+            <div>
+              <div class="py-2">
+                <a href="#">
+                  Instagram
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                  >
+                    <path
+                      d="M9 7.5L14 2.5M14 2.5H10.6667M14 2.5V5.83333M14 9.83333V13.1667C14 13.5203 13.8595 13.8594 13.6095 14.1095C13.3594 14.3595 13.0203 14.5 12.6667 14.5H3.33333C2.97971 14.5 2.64057 14.3595 2.39052 14.1095C2.14048 13.8594 2 13.5203 2 13.1667V3.83333C2 3.47971 2.14048 3.14057 2.39052 2.89052C2.64057 2.64048 2.97971 2.5 3.33333 2.5H6.66667"
+                      stroke="white"
+                      stroke-opacity="0.5"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="py-2">
+                <a href="#">
+                  LinkedIn
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                  >
+                    <path
+                      d="M9 7.5L14 2.5M14 2.5H10.6667M14 2.5V5.83333M14 9.83333V13.1667C14 13.5203 13.8595 13.8594 13.6095 14.1095C13.3594 14.3595 13.0203 14.5 12.6667 14.5H3.33333C2.97971 14.5 2.64057 14.3595 2.39052 14.1095C2.14048 13.8594 2 13.5203 2 13.1667V3.83333C2 3.47971 2.14048 3.14057 2.39052 2.89052C2.64057 2.64048 2.97971 2.5 3.33333 2.5H6.66667"
+                      stroke="white"
+                      stroke-opacity="0.5"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="py-2">
+                <a href="#">
+                  Medium
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                  >
+                    <path
+                      d="M9 7.5L14 2.5M14 2.5H10.6667M14 2.5V5.83333M14 9.83333V13.1667C14 13.5203 13.8595 13.8594 13.6095 14.1095C13.3594 14.3595 13.0203 14.5 12.6667 14.5H3.33333C2.97971 14.5 2.64057 14.3595 2.39052 14.1095C2.14048 13.8594 2 13.5203 2 13.1667V3.83333C2 3.47971 2.14048 3.14057 2.39052 2.89052C2.64057 2.64048 2.97971 2.5 3.33333 2.5H6.66667"
+                      stroke="white"
+                      stroke-opacity="0.5"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- COPYRIGHT -->
+          <div class="col-12 text-center pt-5 pb-3">
+            <p
+              style="
+                color: rgba(255, 255, 255, 0.25);
+                font-family: Poppins;
+                font-size: 0.875rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              "
             >
-              <path
-                d="M50.2509 1.34213L0.999989 136.658"
-                stroke="#10A37F"
-                stroke-linecap="round"
-              />
-            </svg>
-          </div>
-          <div class="d-lg-none">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="151"
-              height="2"
-              viewBox="0 0 151 2"
-              fill="none"
-            >
-              <path
-                d="M0.5 1L150.5 1"
-                stroke="#10A37F"
-                stroke-linecap="round"
-              />
-            </svg>
-          </div>
-          <div id="about-2">
-            <p>
-              <b>Solusiinaja</b> are software development services based in
-              Bandung, West Java, Indonesia. Driven by a passion for innovation
-              and a commitment to delivering exceptional IT software services.
-              With a team of dedicated professionals, we embark on a journey to
-              transform your digital aspirations into reality.
+              Copyright © 2023 CV Nawasera Solution All Rights Reserved
             </p>
           </div>
         </div>
-        <!-- SERVICE -->
-      </div>
-      <div id="services">
-        <div id="servicesTitle"><h1>Our Services</h1></div>
-        <div id="servicesContainer">
-          <div class="serviceItems">
-            <h1>🌐</h1>
-
-            <h3>Website Application</h3>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="27"
-              height="2"
-              viewBox="0 0 27 2"
-              fill="none"
-            >
-              <path
-                d="M1 1H26"
-                stroke="#10A37F"
-                stroke-width="2"
-                stroke-linecap="round"
-              />
-            </svg>
-            <p>Web Development, API to server management</p>
-          </div>
-          <div class="serviceItems">
-            <h1>📱</h1>
-            <h3>Mobile Application</h3>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="27"
-              height="2"
-              viewBox="0 0 27 2"
-              fill="none"
-            >
-              <path
-                d="M1 1H26"
-                stroke="#10A37F"
-                stroke-width="2"
-                stroke-linecap="round"
-              />
-            </svg>
-            <p>Building custom iOS & Android apps</p>
-          </div>
-          <div class="serviceItems">
-            <h1>💻</h1>
-            <h3>Desktop Application</h3>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="27"
-              height="2"
-              viewBox="0 0 27 2"
-              fill="none"
-            >
-              <path
-                d="M1 1H26"
-                stroke="#10A37F"
-                stroke-width="2"
-                stroke-linecap="round"
-              />
-            </svg>
-            <p>Development for Windows, macOS & Linux operating system</p>
-          </div>
-          <div class="serviceItems">
-            <h1>🎨</h1>
-            <h3>Product Design</h3>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="27"
-              height="2"
-              viewBox="0 0 27 2"
-              fill="none"
-            >
-              <path
-                d="M1 1H26"
-                stroke="#10A37F"
-                stroke-width="2"
-                stroke-linecap="round"
-              />
-            </svg>
-            <p>Turn ideas into great product</p>
-          </div>
-        </div>
-      </div>
+      </footer>
     </div>
-    <!-- PROJECTS -->
-    <!-- CONTACT -->
-    <!-- HEADER -->
   </body>
 </html>
