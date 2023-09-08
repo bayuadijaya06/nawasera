@@ -253,15 +253,53 @@ html {
 }
 #project-1 {
   border-radius: 1rem;
-  background: url(assets/project1.png), lightgray 50% / cover no-repeat;
+  background-image: url(assets/validator.jpg);
+  filter: grayscale(100%);
+  background-position-x: center;
+  background-position-y: center;
 }
 #project-2 {
   border-radius: 1rem;
-  background: url(assets/project1.png), lightgray 50% / cover no-repeat;
+  background-image: url(assets/umkm.jpg);
+  filter: grayscale(100%);
+  background-position-x: center;
+  background-position-y: center;
 }
 #project-3 {
   border-radius: 1rem;
-  background: url(assets/project1.png), lightgray 50% / cover no-repeat;
+  background-image: url(assets/livie.png);
+  filter: grayscale(100%);
+  background-position-x: center;
+  background-position-y: center;
+}
+#project-4 {
+  border-radius: 1rem;
+  background-image: url(assets/korpo.png);
+  filter: grayscale(100%);
+  background-position-x: center;
+  background-position-y: center;
+}
+#project-5 {
+  border-radius: 1rem;
+  background-image: url(assets/annisa.png);
+  filter: grayscale(100%);
+  background-position-x: center;
+  background-position-y: center;
+}
+#project-6 {
+  border-radius: 1rem;
+  background-image: url(assets/barcode.png);
+  filter: grayscale(100%);
+  background-position-x: center;
+  background-position-y: center;
+}
+#project-1:hover,
+#project-2:hover,
+#project-3:hover,
+#project-4:hover,
+#project-5:hover,
+#project-6:hover {
+  filter: grayscale(0%);
 }
 #contact {
   padding: 3.125rem 6.25rem;
