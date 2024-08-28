@@ -24,7 +24,7 @@ function send() {
     document.getElementById("danger").style.display = "none";
 
     window.location.href =
-      "mailto:hello@solusiinaja.id?subject=" +
+      "mailto:hello@nawasera.id?subject=" +
       name +
       " - Solusiinaja Inquiry" +
       "&body=" +
